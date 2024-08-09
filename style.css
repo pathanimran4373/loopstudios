@@ -335,10 +335,10 @@ footer {
 }
 
 /* for laptop */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (max-width:768px) {
   html,
   body {
-    font-size: 80%;
+    font-size: 60%;
   }
   .content-headingAndButton button {
     display: block;
@@ -521,13 +521,37 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
   html,
   body {
     font-size: 70%;
   }
+  .menu-btn-container {
+    display: none;
+  }
+
+  .navbar .menus-container {
+    visibility: visible;
+    width: 45vw;
+    height: 10vh;
+    position: initial;
+    transform: none;
+    flex-direction: row;
+    align-items: center;
+    row-gap: 30px;
+    background: transparent;
+  }
+
+  .navbar ul li a {
+    font-size: 1.3rem;
+    color: var(--White);
+    font-family: var(--alataRegular);
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
   .header-baner-text {
-    width: 60%;
+    width: 50%;
   }
   .interactive-vr-page {
     position: relative;
@@ -551,7 +575,7 @@ footer {
     position: absolute;
     top: 24%;
     left: 50%;
-    width: 60%;
+    width: 50%;
     height: auto;
     background-color: var(--White);
     padding: 65px 0 65px 65px;
@@ -669,9 +693,6 @@ footer {
   }
   .footer-section h2 {
     font-size: 3rem;
-    font-weight: 400;
-    font-style: var(--alataRegular);
-    color: var(--White);
     position: absolute;
     top: 5%;
     left: 10%;
@@ -709,28 +730,23 @@ footer {
     list-style: none;
   }
   .footer-menu ul li a {
-    color: var(--White);
     font-size: 2rem;
-    font-weight: 400;
     list-style: none;
     padding: 10px 0;
     text-decoration: none;
-    font-family: var(--alataRegular);
   }
   .footer-menu ul li a:is(:hover, :focus) {
     border-bottom: 2px solid var(--White);
   }
   .footer-section p {
-    color: var(--VeryDarkGray);
-    font-size: 1.5rem;
-    font-family: var(--alataRegular);
-    font-weight: 400;
+   
     margin-right: 30px;
     position: absolute;
     bottom: 30%;
-    right: 0%;
+    right: 5%;
   }
 }
+/* large screen */
 @media only screen and (min-width: 1201px) and (max-width: 1440px) {
   body,
   html {
