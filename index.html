@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- font icons-link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Loopstudios</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <header class="header">
+    <div class="page-wrapper">
+
+      <nav class="navbar">
+        <h1>loopstudios</h1>
+
+        <ul class="menus-container">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+        <div class="menu-btn-container">
+          <span class="close-btn"><i class="fa fa-close"></i></span>
+          <span class="open-btn"><i class="fa fa-bars"></i></i></span>
+        </div>
+      </nav>
+      
+      <div class="header-baner-text">
+        <p>IMMERSIVE EXPERIENCES THAT DELIVER</p>
+      </div>
+    </div>
+    </header>
+
+    <!-- main section start -->
+   <main>
+    <div class="page-wrapper">
+      <section class="interactive-vr-page">
+        <div class="main-image-contaier">
+          <img
+            src="./images/desktop/image-interactive.jpg"
+            alt="intractive vr"
+          />
+        </div>
+        <div class="main-text-container">
+          <h1>THE LEADER IN INTERACTIVE VR</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. consequatur
+            velit molestias architecto officiis excepturi dolorum? Sint
+            repellendus voluptatum exercitationem!
+          </p>
+        </div>
+      </section>
+      <section class="creation-page">
+        <div class="content-headingAndButton">
+          <h1>OUR CREATIONS</h1>
+          <button><a href="#">SEE ALL</a></button>
+        </div>
+        <div class="content-allImage">
+          <div class="imgBox">
+            <h2 class="overlay-text">DEEP EARTH</h2>
+          </div>
+          <div class="imgBox">
+            <h2 class="overlay-text">NIGHT ARCADE</h2>
+          </div>
+          <div class="imgBox">
+            <h2 class="overlay-text">SOCCER TEAM VR</h2>
+          </div>
+          <div class="imgBox">
+            <h2 class="overlay-text">THE GRID</h2>
+          </div>
+          <div class="imgBox">
+            <h2 class="overlay-text">FROM UP ABOVE VR</h2>
+          </div>
+          <div class="imgBox">
+            <h2 class="overlay-text">POCKET BOREALIS</h2>
+          </div>
+          <div class="imgBox">
+            <h2 class="overlay-text">THE CURIOSITY</h2>
+          </div>
+          <div class="imgBox">
+            <h2 class="overlay-text">MAKE IT FISHEYE</h2>
+          </div>
+        </div>
+        <button class="show-btn-mobile">SEE ALL</button>
+      </section>
+    </div>
+   </main>
+   <!-- main section end -->
+    <footer>
+      <div class="footer-section">
+        <h2>loopstudios</h2>
+        <div class="footer-menu">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Caeers</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-icons">
+          <a href="#">
+            <img src="./images/icon-facebook.svg" alt="facebook" />
+          </a>
+          <a href="#">
+            <img src="./images/icon-twitter.svg" alt="tweeter" />
+          </a>
+          <a href="#">
+            <img src="./images/icon-pinterest.svg" alt="pinrest" />
+          </a>
+          <a href="#">
+            <img src="./images/icon-instagram.svg" alt="instsa" />
+          </a>
+        </div>
+        <p>@2021Loopstudios.All rights reserved</p>
+      </div>
+    </footer>
+    <script>
+      const openBtn = document.querySelector(".menu-btn-container");
+      const allMenus = document.querySelector(".navbar");
+
+     openBtn.addEventListener("click",function toggleFun(){
+      allMenus.classList.toggle("active")
+     })
+     
+    </script>
+  </body>
+</html>
