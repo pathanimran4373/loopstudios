@@ -802,7 +802,7 @@ footer {
     top: 24%;
     left: 50%;
     width: 50%;
-    height: auto;
+    height: 60vh;
     background-color: var(--White);
     padding: 60px 0 60px 60px;
     z-index: 1;
