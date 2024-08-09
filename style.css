@@ -334,192 +334,6 @@ footer {
   }
 }
 
-/* for laptop */
-@media only screen and (max-width:768px) {
-  html,
-  body {
-    font-size: 60%;
-  }
-  .content-headingAndButton button {
-    display: block;
-  }
-  #navigation-menus {
-    display: block;
-    display: flex;
-    gap: 20px;
-  }
-  #toggle-navbar-btn {
-    display: none;
-  }
-
-  #navigation-menus li {
-    list-style: none;
-  }
-  nav ul li a {
-    font-size: 2rem;
-    color: var(--White);
-    font-family: var(--alataRegular);
-    text-decoration: none;
-    font-weight: 400;
-  }
-  nav ul li a:hover {
-    border-bottom: 2px solid var(--White);
-  }
-
-  .header-baner-text {
-    width: 60%;
-  }
-  .interactive-vr-page {
-    position: relative;
-    height: 100vh;
-    margin: 150px 0 0 0;
-  }
-  .main-image-contaier {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 70%;
-    height: 70%;
-  }
-  .main-image-contaier img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    object-fit: contain;
-  }
-  .main-text-container {
-    position: absolute;
-    top: 24%;
-    left: 50%;
-    width: 50%;
-    height: auto;
-    background-color: var(--White);
-    padding: 65px 0 65px 65px;
-    z-index: 1;
-  }
-  .main-text-container h1 {
-    font-size: 3rem;
-    text-align: left;
-    margin: 0 0 7px 0;
-  }
-  .main-text-container p {
-    font-size: 1.5rem;
-    text-align: justify;
-  }
-
-  .content-headingAndButton {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 80px;
-  }
-  .content-headingAndButton button {
-    display: block;
-    background-color: transparent;
-    width: 100px;
-  }
-  .content-headingAndButton button a:hover {
-    cursor: pointer;
-    background-color: var(--Black);
-    color: var(--White);
-  }
-  .content-headingAndButton button a {
-    padding: 5px 10px;
-    display: block;
-    text-decoration: none;
-    color: var(--Black);
-    font-size: 1rem;
-    word-spacing: 1px;
-    letter-spacing: 3px;
-    font-weight: 400;
-    font-family: var(--alataRegular);
-  }
-
-  .content-allImage {
-    padding: 5px 0 30px 0;
-    gap: 20px;
-  }
-
-  .show-btn-mobile {
-    display: none;
-  }
-  .footer-section {
-    height: 100px;
-
-    position: relative;
-  }
-  footer {
-    background-color: var(--Black);
-    height: 50vh;
-  }
-  .footer-section {
-    width: 100%;
-    height: 100%;
-  }
-  .footer-section h2 {
-    font-size: 3rem;
-    font-weight: 400;
-    font-style: var(--alataRegular);
-    color: var(--White);
-    position: absolute;
-    top: 5%;
-    left: 10%;
-  }
-  .footer-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0px 5px;
-    position: absolute;
-    top: 5%;
-    right: 10%;
-  }
-  .footer-icons a {
-    text-decoration: none;
-    width: 40px;
-    height: 40px;
-    align-self: center;
-    padding: 5px;
-  }
-  .footer-icons a:hover {
-    border-bottom: 2px solid var(--White);
-  }
-  .footer-menu {
-    margin-top: 20px;
-    position: absolute;
-    bottom: 30%;
-    left: 10%;
-  }
-  .footer-menu ul {
-    flex-direction: row;
-    gap: 0 20px;
-  }
-  .footer-menu ul li {
-    list-style: none;
-  }
-  .footer-menu ul li a {
-    color: var(--White);
-    font-size: 2rem;
-    font-weight: 400;
-    list-style: none;
-    padding: 10px 0;
-    text-decoration: none;
-    font-family: var(--alataRegular);
-  }
-  .footer-menu ul li a:is(:hover, :focus) {
-    border-bottom: 2px solid var(--White);
-  }
-  .footer-section p {
-    color: var(--VeryDarkGray);
-    font-size: 1.5rem;
-    font-family: var(--alataRegular);
-    font-weight: 400;
-    margin-right: 30px;
-    position: absolute;
-    bottom: 30%;
-    right: 0%;
-  }
-}
 
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
   html,
@@ -588,7 +402,7 @@ footer {
   }
   .main-text-container p {
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: left;
   }
 
   .content-headingAndButton {
@@ -623,8 +437,8 @@ footer {
     width: 100%;
     margin: 40px 0;
     display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
   .imgBox {
     width: 100%;
